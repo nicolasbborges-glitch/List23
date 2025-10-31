@@ -1,10 +1,12 @@
-package firstProject;
+public class Main {
+    public static void main(String[] args) {
+        Avaliacao a = new Avaliacao();
 
-public class MainAvaliacao {
+        a.setNome("Maria");
+        a.setNota1(8.5);
+        a.setNota2(9.0);
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+        System.out.println("Aluno: " + a.getNome());
+        System.out.println("Média: " + a.calcularMedia());
+    }
 }
